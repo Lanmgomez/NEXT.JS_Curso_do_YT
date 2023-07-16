@@ -4,30 +4,6 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
       <div className={styles.center}>
         <Image
           className={styles.logo}
@@ -38,58 +14,28 @@ export default function Home() {
           priority
         />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div>
+        <h1>O Next é uma biblioteca de React</h1>
+        <ul>
+          <li>O Next é um superset de React, ou seja, possui facilidades para lidar com coisas que o "React Vanilla" precisava de pacotes externos, como o react-router-dom</li>
+          <li>A versão que estou estudando é a partir do Next v 13</li>
+          <li>Esta branch tem como intuito ensinar a usar rotas no Next</li>
+        </ul>
       </div>
+
+      <section>
+          <hgroup>
+            <h1>Criação de rotas:</h1>
+              <h2>01 - Criar uma pasta chamada: <b>pages</b>, dentro da pasta app</h2>
+              <h2>02 - Criar subpastas com o nome referente a cada rota, exemplo: Home, Sobre Nós, etc.</h2>
+              <h2>03 - Dentro de cada subpasta, adicionar um arquivo (".js", ".jsx" ou ".tsx") com o nome: page.js</h2>
+                <ul>
+                  <li>Esse arquivo chamado page.js será a rota, qualquer arquivo dentro dessa past com outro nome, não será acessível como rota.</li>
+                  <li>Cada pasta referente a uma rota, terá o mesmo arquivo chamado: page.js</li>
+                </ul>
+          </hgroup>
+      </section>
+     
     </main>
   )
 }
