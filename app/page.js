@@ -15,17 +15,13 @@ export default function Home() {
         />
       </div>
       <div>
-        <h1>O Next é uma biblioteca de React</h1>
-        <ul>
-          <li>O Next é um superset de React, ou seja, possui facilidades para lidar com coisas que o "React Vanilla" precisava de pacotes externos, como o react-router-dom</li>
-          <li>A versão que estou estudando é a partir do Next v 13</li>
-          <li>Esta branch tem como intuito ensinar a usar rotas no Next</li>
-        </ul>
+        <h1>Meta Tags</h1>
+         <h3>Podemos inserir informações como title e etc, com um component chamado: <b>Head</b> </h3>
       </div>
 
       <section>
           <hgroup>
-            <h1>Criação de rotas:</h1>
+            <h1>Explicação:</h1>
               <h2>01 - Criar uma pasta chamada: <b>pages</b>, dentro da pasta app</h2>
               <h2>02 - Criar subpastas com o nome referente a cada rota, exemplo: Home, Sobre Nós, etc.</h2>
               <h2>03 - Dentro de cada subpasta, adicionar um arquivo (".js", ".jsx" ou ".tsx") com o nome: page.js</h2>
@@ -35,7 +31,6 @@ export default function Home() {
                 </ul>
           </hgroup>
       </section>
-     
     </main>
   )
 }

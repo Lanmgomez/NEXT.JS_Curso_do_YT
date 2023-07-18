@@ -1,9 +1,17 @@
 import React from 'react'
 
-const Login = () => {
+export const metadata = {
+    title: 'Login',
+    description: 'Essa página é de login',
+}
+
+const page = () => {
   return (
-    <h1>Login</h1>
+    <div>
+        <h1>Login</h1>
+            <p>Essa página é de login</p>
+    </div>
   )
 }
 
-export default Login
+export default page
