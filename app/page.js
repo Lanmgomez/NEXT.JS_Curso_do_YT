@@ -5,21 +5,15 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-      <div>
-        <h1>Meta Tags</h1>
-         <h3>Podemos inserir informações como title e etc, com um component chamado: <b>Head</b> </h3>
-      </div>
-
-      <section>
+        <section>
+          <Image
+            className={styles.logo}
+            src="/next.svg"
+            alt="Next.js Logo"
+            width={180}
+            height={37}
+            priority
+          />
           <hgroup>
             <h1>Explicação:</h1>
               <h2>01 - Criar uma pasta chamada: <b>pages</b>, dentro da pasta app</h2>
@@ -31,6 +25,7 @@ export default function Home() {
                 </ul>
           </hgroup>
       </section>
+      </div>
     </main>
   )
 }
